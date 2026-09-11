@@ -1,0 +1,21 @@
+# 核心依赖（运行 baseline / SCC / 平滑 / method2 所需）
+# 版本为本工作实际运行环境（Python 3.11, conda env: st_agent）中验证过的版本
+numpy==2.4.6
+scipy==1.17.1
+pandas==2.3.3
+scikit-learn==1.9.0
+scanpy==1.11.5
+anndata==0.12.17
+h5py==3.16.0
+igraph==1.0.0
+leidenalg==0.12.0
+matplotlib==3.11.0
+umap-learn==0.5.12
+
+# 仅 code/04_graphst/ 的 GraphST 复现需要（其余方法不依赖）
+# torch 请按机器 CUDA 版本安装，见 https://pytorch.org/get-started/locally/
+# torch==2.12.1
+# GraphST==1.1.1
+
+# 上游依赖：图谱构建 / SCC 复用 Spateo 的实现
+# pip install git+https://github.com/aristoteleo/spateo-release
